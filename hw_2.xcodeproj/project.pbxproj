@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28BF1C942332838200FBB6F5 /* slime.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28BF1C932332835F00FBB6F5 /* slime.png */; };
 		28BF1C982336FC4200FBB6F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BF1C972336FC4200FBB6F5 /* main.cpp */; };
-		28BF1CA2233810CB00FBB6F5 /* not_snake.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28BF1CA1233810C600FBB6F5 /* not_snake.png */; };
+		28BF1FC8233BBF0A00FBB6F5 /* entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BF1FC6233BBF0A00FBB6F5 /* entity.cpp */; };
 		DBDF1B5E2323DE8D007CECB1 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBDF1B5D2323DE8D007CECB1 /* ShaderProgram.cpp */; };
 		DBDF1B612323DE9E007CECB1 /* shaders in CopyFiles */ = {isa = PBXBuildFile; fileRef = DBDF1B5C2323DE8D007CECB1 /* shaders */; };
 		DBDF1B632323DEDA007CECB1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDF1B622323DEDA007CECB1 /* OpenGL.framework */; };
@@ -26,8 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				28BF1CA2233810CB00FBB6F5 /* not_snake.png in CopyFiles */,
-				28BF1C942332838200FBB6F5 /* slime.png in CopyFiles */,
 				DBDF1B612323DE9E007CECB1 /* shaders in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,11 +32,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		28BF1C932332835F00FBB6F5 /* slime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slime.png; sourceTree = "<group>"; };
 		28BF1C972336FC4200FBB6F5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		28BF1CA1233810C600FBB6F5 /* not_snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = not_snake.png; sourceTree = "<group>"; };
-		DBDF1B4F2323DE3F007CECB1 /* hw_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hw_1; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBDF1B592323DE8D007CECB1 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
+		28BF1FC6233BBF0A00FBB6F5 /* entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = entity.cpp; sourceTree = "<group>"; };
+		28BF1FC7233BBF0A00FBB6F5 /* entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = entity.h; sourceTree = "<group>"; };
+		28BF1FC9233BC27200FBB6F5 /* ShaderProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
+		DBDF1B4F2323DE3F007CECB1 /* hw_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hw_2; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDF1B5A2323DE8D007CECB1 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		DBDF1B5B2323DE8D007CECB1 /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glm; sourceTree = "<group>"; };
 		DBDF1B5C2323DE8D007CECB1 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
@@ -79,7 +76,7 @@
 		DBDF1B502323DE3F007CECB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBDF1B4F2323DE3F007CECB1 /* hw_1 */,
+				DBDF1B4F2323DE3F007CECB1 /* hw_2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,14 +84,14 @@
 		DBDF1B512323DE3F007CECB1 /* hw_2 */ = {
 			isa = PBXGroup;
 			children = (
-				28BF1C932332835F00FBB6F5 /* slime.png */,
-				28BF1CA1233810C600FBB6F5 /* not_snake.png */,
 				DBDF1B5B2323DE8D007CECB1 /* glm */,
-				DBDF1B5D2323DE8D007CECB1 /* ShaderProgram.cpp */,
-				DBDF1B592323DE8D007CECB1 /* ShaderProgram.h */,
 				DBDF1B5C2323DE8D007CECB1 /* shaders */,
 				DBDF1B5A2323DE8D007CECB1 /* stb_image.h */,
+				DBDF1B5D2323DE8D007CECB1 /* ShaderProgram.cpp */,
+				28BF1FC9233BC27200FBB6F5 /* ShaderProgram.h */,
 				28BF1C972336FC4200FBB6F5 /* main.cpp */,
+				28BF1FC6233BBF0A00FBB6F5 /* entity.cpp */,
+				28BF1FC7233BBF0A00FBB6F5 /* entity.h */,
 			);
 			path = hw_2;
 			sourceTree = "<group>";
@@ -114,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DBDF1B4E2323DE3F007CECB1 /* hw_1 */ = {
+		DBDF1B4E2323DE3F007CECB1 /* hw_2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBDF1B562323DE3F007CECB1 /* Build configuration list for PBXNativeTarget "hw_1" */;
+			buildConfigurationList = DBDF1B562323DE3F007CECB1 /* Build configuration list for PBXNativeTarget "hw_2" */;
 			buildPhases = (
 				DBDF1B4B2323DE3F007CECB1 /* Sources */,
 				DBDF1B4C2323DE3F007CECB1 /* Frameworks */,
@@ -126,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = hw_1;
+			name = hw_2;
 			productName = SDLProject;
-			productReference = DBDF1B4F2323DE3F007CECB1 /* hw_1 */;
+			productReference = DBDF1B4F2323DE3F007CECB1 /* hw_2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -145,7 +142,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DBDF1B4A2323DE3F007CECB1 /* Build configuration list for PBXProject "hw_1" */;
+			buildConfigurationList = DBDF1B4A2323DE3F007CECB1 /* Build configuration list for PBXProject "hw_2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBDF1B4E2323DE3F007CECB1 /* hw_1 */,
+				DBDF1B4E2323DE3F007CECB1 /* hw_2 */,
 			);
 		};
 /* End PBXProject section */
@@ -168,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBDF1B5E2323DE8D007CECB1 /* ShaderProgram.cpp in Sources */,
+				28BF1FC8233BBF0A00FBB6F5 /* entity.cpp in Sources */,
 				28BF1C982336FC4200FBB6F5 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DBDF1B4A2323DE3F007CECB1 /* Build configuration list for PBXProject "hw_1" */ = {
+		DBDF1B4A2323DE3F007CECB1 /* Build configuration list for PBXProject "hw_2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBDF1B542323DE3F007CECB1 /* Debug */,
@@ -330,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBDF1B562323DE3F007CECB1 /* Build configuration list for PBXNativeTarget "hw_1" */ = {
+		DBDF1B562323DE3F007CECB1 /* Build configuration list for PBXNativeTarget "hw_2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBDF1B572323DE3F007CECB1 /* Debug */,
